@@ -1,0 +1,77 @@
+	<div class="container">
+		<div class="row">
+			<div class="about col-md-4 col-sm-12">
+				<div>
+					<h2>About Codefresh</h2>
+					<p>In Codefresh we allow agile and DevOPS teams to focus on what matters most - building great cloud apps and <span class="highlight">continuously</span> monitor and improve them.</p>
+					<p>Codefresh integrates with the best of breeds services, tools and platforms - hosted IDEs, SCMs, testing, deployment, Infrastructure and monitoring. It accessible from any device and browser, and allows teams to collaborate on their code, deploy and monitor apps - all from a single, intuitive and <span class="highlight">fresh</span> interface.</p>
+					<p>Our beta is coming up soon, sign up and be the first to start coding <span class="highlight">fresh</span> ;)</p>
+
+					<div class="social">
+						<a href="https://www.facebook.com/codefresh.io" target="_blank" class="facebook">facebook</a>
+						<a href="https://twitter.com/codefresh_news" target="_blank" class="twitter">twitter</a>
+						<a href="https://www.linkedin.com/company/codefresh?trk=company_logo" target="_blank" class="linkedin">linked in</a>
+						<a href="mailto:contact@codefresh.io" class="email">email</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="signup col-md-4 col-sm-12">
+				<div class="signup-black-beta-form" style="display: block;">
+					<h2>Sign up for beta</h2>
+					<div class="bb-form" ng-hide="subscribe.result">
+						<form id="signUpBlackBeta" class="form-horizontal" role="form" ng-submit="betaRegister()">
+							<div class="row">
+								<div class="col-sm-12 userName-wrap">
+									<div class="form-group">
+										<input id="betaname_black" name="name" type="text" class="form-control" placeholder="Name" required ng-model="subscribe.form.name">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 userEmail-wrap">
+									<div class="form-group">
+										<input id="betaemail_black" name="email" type="email" class="form-control" placeholder="Email" required ng-model="subscribe.form.email">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="form-group">
+										<button ng-show="subscribe.loader" type="button" class="submit">Please wait...</button>
+										<button ng-hide="subscribe.loader" type="submit" class="submit">Sign Up</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="bb-form-result" ng-show="subscribe.result">
+						<p ng-bind-html="subscribe.result">Thanks for signing up</p>
+						<button class="submit" ng-click="subscribe.reset()">Got it</button>
+					</div>
+					<div class="watermark hidden-sm hidden-xs">
+						<section>
+							<span>codefresh</span>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="updates col-md-4 col-sm-12">
+				<div>
+					<h2>Codefresh Updates</h2>
+					<div twitter-timeline="509393389469462528" css-url="http://cdn.codefresh.io/css/feeds.css?t=3" auto-resize="true" data-tweet-limit="3">Tweets by @codefresh_news</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="about col-sm-12 col-md-12">
+					<p>Copyright &copy; 2014 CodeFresh</p>
+				</div>
+			</div>
+		</div>
+	</div>

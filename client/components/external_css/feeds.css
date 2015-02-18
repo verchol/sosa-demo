@@ -1,0 +1,49 @@
+/* twitter plugin */
+.thm-dark .customisable,
+.thm-dark .customisable:link,
+.thm-dark .customisable:visited,
+.thm-dark .customisable:hover,
+.thm-dark .customisable:focus,
+.thm-dark .customisable:active,
+.thm-dark .customisable-highlight:hover,
+.thm-dark .customisable-highlight:focus,
+.thm-dark a:hover .customisable-highlight,
+.thm-dark a:focus .customisable-highlight {
+	color:#1abc9c !important;
+}
+/*////////////////*/
+
+.e-entry-title {
+	font-size:12px !important;
+}
+
+.thm-dark, .thm-dark .p-author .profile .p-name, .thm-dark .cards-base p, .thm-dark .cards-base p a, .thm-dark .timeline-header .summary, .thm-dark .timeline-header .list-description, .thm-dark .timeline-header a:link, .thm-dark .timeline-header a:visited, .thm-dark .byline, .thm-dark .p-author a.profile:hover .p-name, .thm-dark .p-author a.profile:focus .p-name .thm-dark .custom-timeline-owner-profile .p-name:hover, .thm-dark .custom-timeline-owner-profile .p-name:focus {
+	color:#838383;
+}
+
+.header .avatar {
+	position:relative !important;
+	left:0px !important;
+	width:35px !important;
+	height:35px !important;
+	float:left !important;
+	margin-right:5px !important;
+	margin-bottom:5px !important;
+	border-radius: 0px !important;
+}
+
+.header .full-name {
+	display:block !important;
+}
+
+.var-chromeless .tweet {
+	padding:12px 2px 10px 2px;
+}
+
+.timeline-footer {
+	display:none;
+}
+
+.var-narrow .tweet .header {
+	padding-left:0px;
+}

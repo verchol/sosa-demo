@@ -1,0 +1,16 @@
+<a class="ide-open" ng-show="ide_ready" ng-href="{{ide_ready}}" target="_blank">&nbsp;</a>
+
+<div ng-if="category.active" class="background" ng-click="categoryCodeIt(category.id)"></div>
+<div ng-if="!category.active" class="not_active background"></div>
+<div class="text">
+    <h3 ng-bind-html="category.name"></h3>
+    <p ng-bind-html="category.desc"></p>
+
+    <codeit ide-ready-flag="ide_ready" ex_id="{{category.id}}" id="{{category.id}}"></codeit>
+</div>
+<div class="logo">
+    <img ng-src="assets/images/logo/{{category.logo}}">
+</div>
+<div class="new"></div>
+<div class="soon"></div>
+

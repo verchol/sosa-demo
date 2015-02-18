@@ -1,0 +1,181 @@
+<div class="animation-wrapper">
+	<span id="animation-ballon"></span>
+	<span id="cloud_small"></span>
+	<span id="cloud_medium"></span>
+	<span id="cloud_large"></span>
+</div>
+
+<div class="header-wrapper">
+	<div class="header-inner">
+		<div class="header-inner">
+			<div ng-include="'components/navbar/navbar.html'"></div>
+			<header class="header">
+				<div class="container">
+					<div class="col-sm-12 signup-beta-form">
+						<div class="row">
+							<h1>Join our team to build next generaiton dev environment</h1>
+						</div>
+					</div>
+
+
+					<!--<div class="signup-beta-form-result" style="display: none;">
+						<h1>Thanks for signing up <br> We will keep you posted</h1>
+						<form role="form">
+							<button id="asd" class="btn btn-facebook">Thank you for registering</button>
+						</form>
+					</div>-->
+				</div>
+			</header>
+		</div>
+	</div>
+</div>
+
+<div class="content-wrapper benefits general-benefits">
+	<div class="container">
+		<div class="row">
+			<div class="benefit col-md-4 col-sm-4" ng-repeat="t in team">
+				<div class="text-center">
+					 <div member data="t"></div>
+			</div>
+ 		</div>
+	</div>
+</div>
+
+<div class="content-wrapper benefits featured-benefit">
+	<div class="bi"><div class="bi"><div class="bi">
+		<div class="container">
+			<div class="row">
+				<div class="benefit col-lg-4 col-md-6 col-sm-12">
+					<div>
+						<h2>Featuring Orion</h2>
+						<h4>an extensible &amp; open source web IDE</h4>
+						<p>Orion, an Eclipse open source project. It is a fully web based IDE which is extensible and allows you connect to your dev environment from any browser and OS.</p>
+						<p>In codefresh we host Orion so whether it is a hot fix, after work hours, or any other circumstances, your complete dev environment is always accessible.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div></div></div>
+</div>
+
+<div class="content-wrapper testamonials">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<section>
+					<a href="#" class="nav-arrow nav-arrow-prev">prev</a>
+					<a href="#" class="nav-arrow nav-arrow-next">next</a>
+					<div class="testamonial">
+						<img class="picture" src="../assets/images/profile-picture-1.png" alt="alt">
+						<h2>Check out what early users of codefresh have to say</h2>
+						<p>“Dude! this is awusome I have been writing code for years and the interface looks much as it did 15 years ago... thumbs up for codefresh for designing an interface with the user in mind.” Ovum, 5/2014</p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Features:</h1>
+			<ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
+				<li><a href="#" tooltip="{{thing.info}}">{{thing.name}}</a></li>
+			</ul>
+		</div>
+	</div>
+</div>-->
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="about col-md-4 col-sm-12">
+				<div>
+					<h2>About Codefresh</h2>
+					<p>Appdev iPhone App is crafted by <a href="javascript:void(0);" title=" @live_mesh"> @live_mesh</a> (LiveMesh). If you need help on Appdev you can email us: <a href="mailto:info@mysite.com" title="info@mysite.com">info@mysite.com</a>. You can also use the contact form to send us a quick message.</p>
+					<p>Appdev is also available in the social networks. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+
+					<div class="social">
+						<a href="#" class="facebook">facebook</a>
+						<a href="https://twitter.com/codefresh_news" class="twitter">twitter</a>
+						<a href="#" class="youtube">youtube</a>
+						<a href="#" class="google-plus">google plus</a>
+						<a href="https://www.linkedin.com/company/codefresh?trk=company_logo" class="linkedin">linked in</a>
+						<a href="#" class="email">email</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="signup col-md-4 col-sm-12">
+				<div class="signup-black-beta-form" style="display: block;">
+					<h2>Sign up for beta</h2>
+					<div class="bb-form">
+						<form id="signUpBlackBeta" class="form-horizontal" role="form">
+							<div class="row">
+								<div class="col-sm-12 userName-wrap">
+									<div class="form-group">
+										<input id="betaname_black" name="name" type="text" class="form-control" placeholder="Name" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 userEmail-wrap">
+									<div class="form-group">
+										<input id="betaemail_black" name="email" type="text" class="form-control" placeholder="Email" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="form-group">
+										<button id="submit_black" type="submit" class="btn btn-yellow btn-lg">Sign Up</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="bb-form-result" style="display: none;">
+						<p>Thanks for signing up</p>
+						<p>We will keep you posted</p>
+						<form role="form">
+							<button id="blackBetaResBtn" class="btn btn-success-green">Got it</button>
+						</form>
+					</div>
+					<div class="watermark hidden-sm hidden-xs">
+						<section>
+							<span>codefresh</span>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="updates col-md-4 col-sm-12">
+				<div>
+					<h2>Codefresh Updates</h2>
+					<a class="twitter-timeline" href="https://twitter.com/codefresh_news"
+					   data-widget-id="509393389469462528">Tweets by @codefresh_news</a>
+					<script>!function (d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+						if (!d.getElementById(id)) {
+							js = d.createElement(s);
+							js.id = id;
+							js.src = p + "://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js, fjs);
+						}
+					}(document, "script", "twitter-wjs");</script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="about col-sm-12 col-md-12">
+					<p>Copyright &copy; 2014 CodeFresh</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

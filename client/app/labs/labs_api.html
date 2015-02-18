@@ -1,0 +1,38 @@
+
+<section class="api_run">
+	<div class="content_wrapper container">
+		<div ng-hide="link_ready">
+			Please wait...
+		</div>
+		<div ng-show="link_ready">
+			<div ng-show="api_error" ng-bind="api_error"></div>
+			<div ng-hide="api_error">
+				Your workspace is ready: <a class="run btn btn-primary" ng-href="{{api_link}}" ng-click="runIdeBetweenStep()">Run</a>
+			</div>
+		</div>
+
+	</div>
+</section>
+<footer ng-include="'components/footer/footer.html'" ng-controller="FooterCtrl"></footer>
+
+<style>
+	.api_run {
+		height:400px;
+		background-color:#1ABC9C;
+		padding-top:50px;
+		text-align:center;
+		color: #fff;
+		font-family: "Podkova",Georgia,serif;
+		font-size: 34px;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+
+	a.run {
+		width:140px;
+		margin:0px 20px;
+		font-family: "Podkova", Georgia, serif;
+		font-size:20px;
+		letter-spacing: 2px;
+	}
+</style>

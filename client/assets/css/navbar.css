@@ -1,0 +1,224 @@
+/*navbar*/
+.navbar {
+	padding-top: 20px;
+	font-size: 1.4285714286em;
+}
+.navbar .navbar-nav {
+	float:right;
+
+	margin-top:20px;
+}
+
+#navbar-main {
+	position: static;
+}
+
+.navbar .navbar-nav a {
+	font-size:18px;
+}
+
+.navbar .navbar-nav li a:after {
+	content: "|";
+	float: right;
+	margin: 0 -20px 0 0;
+}
+@media (max-width: 480px) {
+	.navbar .navbar-nav li a:after {
+		content: "|";
+		float: right;
+		margin: 0 -15px 0 0;
+	}
+
+	.navbar .navbar-nav li {
+		font-size:20px;
+		padding:0px 7px;
+	}
+}
+
+@media (min-width: 480px) {
+	.navbar {
+		font-size: 1.4285714286em;
+	}
+}
+@media (min-width: 768px) {
+	.navbar {
+		font-size: 1.4285714286em;
+	}
+}
+
+/*logo*/
+.navbar-brand {
+	background: transparent url('../images/codefresh-logo-s.png?1412587949') no-repeat left top;
+	width: 60px;
+	height: 51px;
+	margin-right: 15px;
+	padding: 0;
+	text-indent: -9999px;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+	text-decoration: none;
+}
+
+
+.navbar .navbar-brand {
+	margin-left:15px;
+}
+@media (min-width: 480px) {
+	.navbar .navbar-brand {
+		background: transparent url('../images/codefresh-logo.png?1412587949') no-repeat left top;
+		width: 82px;
+		height: 70px;
+		margin-right: 60px;
+		margin-left: 15px;
+	}
+}
+@media (min-width: 470px) {
+	.navbar .navbar-brand {
+		margin-left: 15px;
+	}
+}
+@media (min-width: 768px) {
+	.navbar .navbar-brand {
+		background: transparent url('../images/new/codefresh-logo-l.png') no-repeat left top;
+		width: 112px;
+		height: 95px;
+		margin-right: 80px;
+	}
+	.navbar > .container .navbar-brand,
+	.navbar > .container-fluid .navbar-brand {
+		margin-left: 0px;
+	}
+}
+
+/*navbar-menu*/
+@media (min-width: 768px) {
+	.navbar .navbar-nav li a {
+		margin-left: 5px;
+		margin-right: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar .navbar-nav li a {
+		margin-left: 6px;
+		margin-right: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar .navbar-nav li a:after {
+		content: "|";
+		float: right;
+		margin: 0 -30px 0 0;
+	}
+}
+
+@media (min-width: 480px) and (min-width: 768px) {
+	.navbar .navbar-nav li a:after {
+		margin-right: -30px;
+	}
+}
+
+.navbar .navbar-nav li:last-child a {
+	margin-right: 0;
+}
+
+.navbar .navbar-nav li:last-child a:after {
+	content: "";
+	margin: 0;
+}
+
+.navbar-cfnew {
+	background-color: transparent;
+	border: none;
+}
+
+
+@media (min-width: 768px) {
+	.navbar-cfnew .navbar-nav > li {
+		min-height: 71px;
+	}
+}
+.navbar-cfnew .navbar-nav > li > a, .navbar-cfnew .navbar-nav > li > a:hover, .navbar-cfnew .navbar-nav > li > a:active, .navbar-cfnew .navbar-nav > li > a:visited {
+	margin-top: 0;
+	padding: 7px 5px 12px;
+	color: #fff;
+}
+.navbar-cfnew .navbar-nav > li > a,
+.navbar-cfnew .navbar-nav > li > a:hover,
+.navbar-cfnew .navbar-nav > li > a:visited,
+.navbar-cfnew .navbar-nav > li > a:active {
+	background-color: transparent;
+}
+.navbar-cfnew .navbar-nav > li.active > a,
+.navbar-cfnew .navbar-nav > li.active > a:hover,
+.navbar-cfnew .navbar-nav > li.active > a:visited,
+.navbar-cfnew .navbar-nav > li.active > a:active {
+	background-color: #f1c40f;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-cfnew .navbar-nav > li.new {
+	background-image: url('../images/new/li_new.png');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-position: right 5px top 10px;
+}
+
+.navbar-cfnew .navbar-nav > li.new.active {
+	background-image:none;
+}
+
+@media (min-width: 480px) {
+	.navbar-cfnew .navbar-nav > li > a, .navbar-cfnew .navbar-nav > li > a:hover, .navbar-cfnew .navbar-nav > li > a:active, .navbar-cfnew .navbar-nav > li > a:visited {
+		margin-top: 12px;
+		padding: 10px 10px 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-cfnew .navbar-nav > li > a, .navbar-cfnew .navbar-nav > li > a:hover, .navbar-cfnew .navbar-nav > li > a:active, .navbar-cfnew .navbar-nav > li > a:visited {
+		padding: 13px 15px 13px;
+	}
+}
+/*toggle*/
+.navbar-cfnew .navbar-toggle {
+	border-color: #01937b;
+}
+
+.navbar-cfnew .navbar-toggle:hover, .navbar-cfnew .navbar-toggle:focus {
+	background-color: #01937b;
+}
+
+.navbar-cfnew .navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+	#navbar-main {
+	border-bottom:1px solid #fff;
+	/*background:url("../images/bg-pattern.jpg") repeat scroll 0 0 #12b8a2;*/
+		background-color: #1ABC9C;
+		position:absolute;
+		top:80px;
+		width: calc(100% + 20px);
+		z-index: 10;
+		padding: 0px;
+		margin:0px;
+		margin-left:-20px;
+	}
+
+
+}
+
+@media (max-width: 479px) {
+	#navbar-main {
+		top: 60px;
+	}
+
+	.navbar-cfnew .navbar-nav > li.new {
+		background-position: right 2px top -8px;
+	}
+}

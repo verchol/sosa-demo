@@ -1,0 +1,6 @@
+{
+  "global": {
+    "hostname": "staging.codefresh.io",
+    "terminalPort": 57787
+  }
+}

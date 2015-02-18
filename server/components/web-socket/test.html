@@ -1,0 +1,29 @@
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script>
+var socket = io('http://localhost:1111');
+socket.on('serverEvent', function (data) {
+  console.log(data);
+  var r = new Date();
+  $("#output").val(r.getSeconds());
+
+  socket.emit("testEvent", {status:"passed from client"});
+});
+$(function(){
+$("#send").click(function()
+{
+  var value = $("#input").val();
+  socket.emit("clientEvent", {status:"passed from client"});
+});
+
+});
+</script>
+<div>
+<p>input </p>
+<input id="input" type ="text" maxlength = "25"> </input>
+<button id= "send"> Send</button>
+</div>
+<div>
+<p> Output </p>
+<input id="output" type ="text" maxlength = "25"> </input>
+</div>

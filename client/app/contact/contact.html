@@ -1,0 +1,55 @@
+<header class="contact">
+	<div class="content_wrapper container">
+		<div ng-include="'components/navbar/navbar.html'"></div>
+
+		<div class="form_container">
+			<div class="col-sm-12 signup-beta-form">
+				<div class="row">
+					<h1>Drop us a line:</h1>
+				</div>
+			</div>
+			<div class="col-sm-12 signup-beta-form" ng-hide="contactus.result">
+				<form id="contactUs" class="form-horizontal" role="form" ng-submit="contactus.send()" >
+					<div class="row">
+						<div class="col-md-3 col-sm-4 userName-wrap">
+							<div class="form-group">
+								<input type="text" name="userName" ng-minlength="2" ng-model="contactus.form.name" class="form-control" placeholder="Name" required >
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4 userEmail-wrap">
+							<div class="form-group">
+								<input type="email" name="email" ng-model="contactus.form.email" class="form-control" placeholder="Email" required >
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-sm-8 inp-wrap">
+							<div class="form-group">
+								<textarea class="form-control" rows="6" name="userMessage" ng-model="contactus.form.message" placeholder="Message" required ></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<div class="form-group">
+								<button ng-show="contactus.loader"  type="button" class="submit">&nbsp;</button>
+								<button ng-hide="contactus.loader" id="contactUsSubmit" type="submit" class="submit">SEND</button>
+							</div>
+						</div>
+					</div>
+				</form>
+
+			</div>
+
+			<div class="signup-beta-form-result" ng-show="contactus.result">
+				<h1>Thanks for signing up <br> We will keep you posted</h1>
+				<button id="asd" class="submit" ng-click="contactus.reset()">Got it</button>
+
+			</div>
+		</div>
+
+	</div>
+</header>
+<section class="gray-logo"></section>
+
+<footer ng-include="'components/footer/footer.html'" ng-controller="FooterCtrl"></footer>

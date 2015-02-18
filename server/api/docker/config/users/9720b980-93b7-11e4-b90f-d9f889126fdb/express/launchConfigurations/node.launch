@@ -1,0 +1,15 @@
+{
+  "Name": "full-stack",
+  "ServiceId": "io.codefresh.orion.client.node.runner",
+  "Params": {
+    "Name": "Run",
+    "Target": {
+      "Cmd": "node ./bin/www",
+      "Module": "www",
+      "Space": "Node"
+    }
+  },
+  "Url": "http://amazon:1245",
+  "Path": "",
+  "Type": "NodeRunner"
+}

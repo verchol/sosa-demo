@@ -1,0 +1,11 @@
+{
+  "express-angular": "https://github.com/grunzwei-fresh/express-angular.git",
+  "node-mail": "https://github.com/grunzwei-fresh/mail.git",
+  "jade": "https://github.com/grunzwei-fresh/jade.git",
+  "socketio-example": "https://github.com/grunzwei-fresh/socket-io.git",
+  "nodeschool-javascripting": "https://github.com/grunzwei-fresh/nodeschools-javascripting.git",
+  "nodeschool-learnyounode": "https://github.com/grunzwei-fresh/nodeschools-learnyounode.git",
+  "nodeschool-promise-it-wont-hurt": "https://github.com/grunzwei-fresh/nodeschools-promise-it-wont-hurt.git",
+  "nodeschool-async-you": "https://github.com/grunzwei-fresh/nodeschools-async-you.git",
+  "nodeschool-count-to-6": "https://github.com/grunzwei-fresh/nodeschools-count-to-6.git"
+}

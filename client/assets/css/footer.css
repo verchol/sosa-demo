@@ -1,0 +1,370 @@
+
+footer {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: normal;
+	background-color: #2e2e2e;
+	color: #838383;
+	position: relative;
+	/*text-align: center;*/
+	font-size:12px;
+}
+
+@media (min-width: 768px) {
+
+}
+footer .container {
+	padding: 40px 15px;
+	padding-top: 10px !important;
+	padding-bottom:0px;
+}
+@media (min-width: 768px) {
+	footer .container {
+		padding: 25px 0 15px;
+		padding-bottom:0px;
+	}
+}
+
+
+@media (max-width: 1200px) {
+	footer .container {
+		padding:0px 10px;
+	}
+}
+
+/*footer section > div {
+    margin: 0 40px 0 40px;
+    padding-bottom: 30px
+}*/
+
+@media (min-width: 768px) {
+	/*footer section > div {
+        margin: 0
+    }*/
+}
+
+footer h2 {
+	font-family: "Podkova", Georgia, serif;
+	font-weight: 700;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #606163;
+	color: #fff;
+	font-size: 2.1428571429em;
+	margin: 12px 0px 10px 0px;
+	font-weight: bold;
+	font-size:24px;
+}
+
+footer a,
+footer span.highlight{
+	color: #1ABC9C;
+}
+
+footer p {
+	line-height: 1.57em;
+	padding-bottom: 24px;
+}
+
+footer .social a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-top: 15px;
+	margin-right: 6px;
+	text-indent: -9999px;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	footer .social a {
+		width: 40px;
+		height: 40px
+	}
+}
+
+footer .social a:last-child {
+	margin-right: -10px
+}
+
+/*footer .signup h2 {
+    padding-left: 0
+}
+
+@media (min-width: 768px) {
+    footer .signup h2 {
+        padding-left: 0
+    }
+}
+
+footer .updates h2 {
+}*/
+
+@media (min-width: 768px) {
+	/*footer .updates h2 {
+        margin: 20px 0px 10px 0px;
+        padding-left: 0
+    }*/
+}
+
+footer .updates .twitter-timeline {
+	width: 100% !important
+}
+
+footer .signup .bb-form {
+	margin: 0 15px;
+}
+
+footer .signup .bb-form .form-group {
+	margin-bottom:0px;
+}
+
+footer .submit {
+	display:block;
+	border: 0;
+	background-color: #f1c40f;
+	padding: 12px;
+	width:140px;
+	font-size:15px;
+	text-align:center;
+	margin-top:5px;
+	color:#f5822b;
+}
+
+footer .signup form {
+	-moz-placeholder-font-style: normal;
+	-moz-placeholder-color: #ededed !important;
+	-moz-placeholder-text-transform: none;
+	-ms-input-placeholder-font-style: normal;
+	-ms-input-placeholder-color: #ededed !important;
+	-ms-input-placeholder-text-transform: none;
+	margin: 5px 0 25px 0
+}
+
+footer .signup form ::-webkit-input-placeholder {
+	font-style: normal;
+	color: #ededed !important;
+	text-transform: none
+}
+
+footer .signup form ::-moz-placeholder {
+	font-style: normal;
+	color: #ededed !important;
+	text-transform: none
+}
+footer .signup form input {
+	border-radius: 0px;
+	border-color: transparent;
+	color:  #ededed;
+}
+footer .signup form input,
+footer .signup form input[type=email]{
+	height: 50px;
+	margin: 5px 0;
+	background-color: #606163
+}
+
+footer .signup form .btn {
+	margin: 5px 0
+}
+
+footer .copyright {
+	margin-top: 0px;
+	border-top: 1px solid #606163
+}
+
+/*footer .copyright  {
+    padding: 10px 90px
+}*/
+
+@media (min-width: 328px) {
+	footer .copyright .container {
+		padding: 10px 15px
+	}
+}
+
+body > .view > .watermark {
+	background: #e4e4e4 url('../images/bg-secondary.jpg?1410259846') repeat top left;
+	padding: 80px 0 62px;
+}
+
+.watermark {
+	/*padding: 80px 0 62px;*/
+	text-align: center
+}
+
+.watermark span {
+	display: block;
+	width: 72px;
+	height: 62px;
+	margin: 0 auto;
+	text-indent: -9999px
+}
+
+/**/
+
+.marketing-sm-sprite, .marketing-sm-codefresh-logo-grey, .watermark span, .marketing-sm-codefresh-logo, body.login .sign-in .logo, .marketing-sm-social-email, footer .social a.email, .marketing-sm-social-facebook, footer .social a.facebook, .marketing-sm-social-google-plus, footer .social a.google-plus, .marketing-sm-social-linkedin, footer .social a.linkedin, .marketing-sm-social-twitter, footer .social a.twitter, .marketing-sm-social-youtube, footer .social a.youtube {
+	background-image: url('../images/marketing-sm-s7aa7ce5f81.png');
+	background-repeat: no-repeat
+}
+
+.marketing-sm-codefresh-logo-grey, .watermark span {
+	background-position: 0 0
+}
+
+.marketing-sm-codefresh-logo-grey, .view > .watermark span {
+	background-position: -77px 0px;
+}
+
+.marketing-sm-codefresh-logo, body.login .sign-in .logo {
+	background-position: 0 -70px
+}
+
+.marketing-sm-social-email, footer .social a.email {
+	background-position: 0 -240px
+}
+
+.marketing-sm-social-email:hover, footer .social a.email:hover, .marketing-sm-social-email.social-email-hover, footer .social a.social-email-hover.email {
+	background-position: 0 -190px
+}
+
+.marketing-sm-social-email:active, footer .social a.email:active, .marketing-sm-social-email.social-email-active, footer .social a.social-email-active.email {
+	background-position: 0 -140px
+}
+
+.marketing-sm-social-facebook, footer .social a.facebook {
+	background-position: 0 -390px
+}
+
+.marketing-sm-social-facebook:hover, footer .social a.facebook:hover, .marketing-sm-social-facebook.social-facebook-hover, footer .social a.social-facebook-hover.facebook {
+	background-position: 0 -340px
+}
+
+.marketing-sm-social-facebook:active, footer .social a.facebook:active, .marketing-sm-social-facebook.social-facebook-active, footer .social a.social-facebook-active.facebook {
+	background-position: 0 -290px
+}
+
+.marketing-sm-social-google-plus, footer .social a.google-plus {
+	background-position: 0 -540px
+}
+
+.marketing-sm-social-google-plus:hover, footer .social a.google-plus:hover, .marketing-sm-social-google-plus.social-google-plus-hover, footer .social a.social-google-plus-hover.google-plus {
+	background-position: 0 -490px
+}
+
+.marketing-sm-social-google-plus:active, footer .social a.google-plus:active, .marketing-sm-social-google-plus.social-google-plus-active, footer .social a.social-google-plus-active.google-plus {
+	background-position: 0 -440px
+}
+
+.marketing-sm-social-linkedin, footer .social a.linkedin {
+	background-position: 0 -690px
+}
+
+.marketing-sm-social-linkedin:hover, footer .social a.linkedin:hover, .marketing-sm-social-linkedin.social-linkedin-hover, footer .social a.social-linkedin-hover.linkedin {
+	background-position: 0 -640px
+}
+
+.marketing-sm-social-linkedin:active, footer .social a.linkedin:active, .marketing-sm-social-linkedin.social-linkedin-active, footer .social a.social-linkedin-active.linkedin {
+	background-position: 0 -590px
+}
+
+.marketing-sm-social-twitter, footer .social a.twitter {
+	background-position: 0 -840px
+}
+
+.marketing-sm-social-twitter:hover, footer .social a.twitter:hover, .marketing-sm-social-twitter.social-twitter-hover, footer .social a.social-twitter-hover.twitter {
+	background-position: 0 -790px
+}
+
+.marketing-sm-social-twitter:active, footer .social a.twitter:active, .marketing-sm-social-twitter.social-twitter-active, footer .social a.social-twitter-active.twitter {
+	background-position: 0 -740px
+}
+
+.marketing-sm-social-youtube, footer .social a.youtube {
+	background-position: 0 -990px
+}
+
+.marketing-sm-social-youtube:hover, footer .social a.youtube:hover, .marketing-sm-social-youtube.social-youtube-hover, footer .social a.social-youtube-hover.youtube {
+	background-position: 0 -940px
+}
+
+.marketing-sm-social-youtube:active, footer .social a.youtube:active, .marketing-sm-social-youtube.social-youtube-active, footer .social a.social-youtube-active.youtube {
+	background-position: 0 -890px
+}
+
+@media (min-width: 768px) {
+	.marketing-lg-sprite, .marketing-lg-social-email, footer .social a.email, .marketing-lg-social-facebook, footer .social a.facebook, .marketing-lg-social-google-plus, footer .social a.google-plus, .marketing-lg-social-linkedin, footer .social a.linkedin, .marketing-lg-social-twitter, footer .social a.twitter, .marketing-lg-social-youtube, footer .social a.youtube {
+		background-image: url('../images/marketing-lg-saa4065b8b7.png');
+		background-repeat: no-repeat;
+	}
+
+	.marketing-lg-social-email, footer .social a.email {
+		background-position: 0 -80px
+	}
+
+	.marketing-lg-social-email:hover, footer .social a.email:hover, .marketing-lg-social-email.social-email-hover, footer .social a.social-email-hover.email {
+		background-position: 0 -40px
+	}
+
+	.marketing-lg-social-email:active, footer .social a.email:active, .marketing-lg-social-email.social-email-active, footer .social a.social-email-active.email {
+		background-position: 0 0
+	}
+
+	.marketing-lg-social-facebook, footer .social a.facebook {
+		background-position: 0 -200px
+	}
+
+	.marketing-lg-social-facebook:hover, footer .social a.facebook:hover, .marketing-lg-social-facebook.social-facebook-hover, footer .social a.social-facebook-hover.facebook {
+		background-position: 0 -160px
+	}
+
+	.marketing-lg-social-facebook:active, footer .social a.facebook:active, .marketing-lg-social-facebook.social-facebook-active, footer .social a.social-facebook-active.facebook {
+		background-position: 0 -120px
+	}
+
+	.marketing-lg-social-google-plus, footer .social a.google-plus {
+		background-position: 0 -320px
+	}
+
+	.marketing-lg-social-google-plus:hover, footer .social a.google-plus:hover, .marketing-lg-social-google-plus.social-google-plus-hover, footer .social a.social-google-plus-hover.google-plus {
+		background-position: 0 -280px
+	}
+
+	.marketing-lg-social-google-plus:active, footer .social a.google-plus:active, .marketing-lg-social-google-plus.social-google-plus-active, footer .social a.social-google-plus-active.google-plus {
+		background-position: 0 -240px
+	}
+
+	.marketing-lg-social-linkedin, footer .social a.linkedin {
+		background-position: 0 -440px
+	}
+
+	.marketing-lg-social-linkedin:hover, footer .social a.linkedin:hover, .marketing-lg-social-linkedin.social-linkedin-hover, footer .social a.social-linkedin-hover.linkedin {
+		background-position: 0 -400px
+	}
+
+	.marketing-lg-social-linkedin:active, footer .social a.linkedin:active, .marketing-lg-social-linkedin.social-linkedin-active, footer .social a.social-linkedin-active.linkedin {
+		background-position: 0 -360px
+	}
+
+	.marketing-lg-social-twitter, footer .social a.twitter {
+		background-position: 0 -560px
+	}
+
+	.marketing-lg-social-twitter:hover, footer .social a.twitter:hover, .marketing-lg-social-twitter.social-twitter-hover, footer .social a.social-twitter-hover.twitter {
+		background-position: 0 -520px
+	}
+
+	.marketing-lg-social-twitter:active, footer .social a.twitter:active, .marketing-lg-social-twitter.social-twitter-active, footer .social a.social-twitter-active.twitter {
+		background-position: 0 -480px
+	}
+
+	.marketing-lg-social-youtube, footer .social a.youtube {
+		background-position: 0 -680px
+	}
+
+	.marketing-lg-social-youtube:hover, footer .social a.youtube:hover, .marketing-lg-social-youtube.social-youtube-hover, footer .social a.social-youtube-hover.youtube {
+		background-position: 0 -640px
+	}
+
+	.marketing-lg-social-youtube:active, footer .social a.youtube:active, .marketing-lg-social-youtube.social-youtube-active, footer .social a.social-youtube-active.youtube {
+		background-position: 0 -600px
+	}
+}

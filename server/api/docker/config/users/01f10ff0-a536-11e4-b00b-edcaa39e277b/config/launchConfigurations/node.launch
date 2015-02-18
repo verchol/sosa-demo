@@ -1,0 +1,18 @@
+{
+  "Name": "Run Example",
+  "ServiceId": "io.codefresh.orion.client.node.runner",
+  "Params": {
+    "Name": "Run",
+    "Target": {
+      "Cmd": [
+        "node",
+        "app.js"
+      ],
+      "Module": "app.js",
+      "Space": "Node"
+    }
+  },
+  "Url": "http://staging.codefresh.io:57787",
+  "Path": "",
+  "Type": "NodeRunner"
+}

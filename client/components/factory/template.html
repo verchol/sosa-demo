@@ -1,0 +1,33 @@
+<div class="factory">
+
+	<form ng-submit="factory.create()" class="form-inline factory-form">
+		<div class="input-group">
+			<input type="url"
+						name="github"
+						ng-model="factory.url"
+						autocomplete="off"
+						class="form-control github"
+						placeholder="Git repository url"
+						required>
+			<span class="input-group-btn">
+				<button class="btn btn-warning factory-create">Create</button>
+			</span>
+		</div>
+	</form>
+
+	<ul class="row factory-progress">
+		<li class="col-xs-3 factory-progress_step" ng-class="action.status" ng-repeat="action in factory.actions">
+			<span class="factory-progress_step-dot">
+				<a class="factory-progress_finish-link" ng-href="{{action.link}}" ng-if="action.link" target="_blank"></a>
+			</span>
+			<h5 class="factory-progress_step-info text-center" ng-bind="action.name"></h5>
+		</li>
+	</ul>
+
+	<div class="row factory-share" ng-if="factory.factoryURL">
+		<div class="col-xs-12 text-center">
+			<input select-on-click type="text" class="well well-sm text-center factory-share-string" ng-model="factory.factoryURL" readonly>
+		</div>
+	</div>
+
+</div>

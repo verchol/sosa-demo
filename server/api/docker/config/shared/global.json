@@ -1,0 +1,15 @@
+{ "global" :
+    {
+    "provider": "amazon",
+     "deployPort": "1111",
+     "terminalPort" : "5679",
+     "hostname": "192.168.59.103",
+     "devmode" : "true"
+     },
+ "testData" :
+  {
+       "workspace" : "../../../users/user-test",
+       "port" : "11"
+  },
+  "test" : "true"
+}

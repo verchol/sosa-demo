@@ -1,0 +1,6 @@
+{
+  "global": {
+    "hostname": "v1.codefresh.io",
+    "terminalPort": 63231
+  }
+}

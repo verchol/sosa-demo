@@ -1,0 +1,1 @@
+{"Name":"full-stack","ServiceId":"io.codefresh.orion.client.node.runner","Params":{"Name":"Run","Target":{"Cmd":"node start","Module":"app.js","Space":"Node"}},"Url":"http://192.168.59.103:62902","Path":"","Type":"NodeRunner"}

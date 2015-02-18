@@ -1,0 +1,6 @@
+{
+  "global": {
+    "hostname": "192.168.59.103",
+    "terminalPort": 51532
+  }
+}

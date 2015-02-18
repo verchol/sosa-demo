@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<base href="/">
+	<title>Codefresh</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+	<link rel="icon" href="favicon.ico">
+	<!-- build:css(client) assets/css/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="bower_components/angular-notify/dist/angular-notify.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css({.tmp,client}) assets/css/app.css -->
+	<!-- injector:css -->
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
+	<link rel="stylesheet" href="assets/css/keyframes.css">
+	<link rel="stylesheet" href="assets/css/navbar.css">
+	<link rel="stylesheet" href="components/external_css/feeds.css">
+	<link rel="stylesheet" href="components/modal/modal.css">
+	<link rel="stylesheet" href="components/feedback/style.css">
+	<link rel="stylesheet" href="components/factory/style.css">
+	<!-- endinjector -->
+	<!-- endbuild -->
+</head>
+<body ng-app="codeFreshSiteApp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+	your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<div ui-view="" class="view view-{{$state.current.name}}"></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53554200-2', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+</script>
+
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.min.js"></script>
+<![endif]-->
+<!-- build:js({client,node_modules}) app/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/lodash/dist/lodash.compat.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-notify/dist/angular-notify.js"></script>
+<script src="bower_components/socket.io-client/socket.io.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,client}) app/app.js -->
+<script src="app/app.js"></script>
+
+<!-- injector:js -->
+<script src="app/contact/contact.controller.js"></script>
+<script src="app/contact/contact.js"></script>
+<script src="app/factory/factory.controller.js"></script>
+<script src="app/factory/factory.js"></script>
+<script src="app/join/join.controller.js"></script>
+<script src="app/join/join.directives.js"></script>
+<script src="app/join/join.js"></script>
+<script src="app/labs/breadcrumbs.directives.js"></script>
+<script src="app/labs/codeit.directives.js"></script>
+<script src="app/labs/codesample.directives.js"></script>
+<script src="app/labs/labs.controller.js"></script>
+<script src="app/labs/labs.js"></script>
+<script src="app/main/main.controller.js"></script>
+<script src="app/main/main.js"></script>
+<script src="app/product/product.controller.js"></script>
+<script src="app/product/product.js"></script>
+<script src="components/codeSampleService.js"></script>
+<script src="components/feedback/feedback.js"></script>
+<script src="components/factory/factory.directive.js"></script>
+<script src="components/footer/footer.controller.js"></script>
+<script src="components/modal/modal.service.js"></script>
+<script src="components/navbar/navbar.controller.js"></script>
+<script src="components/services.js"></script>
+<!-- endinjector -->
+<!-- endbuild -->
+</body>
+</html>

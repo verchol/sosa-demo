@@ -1,0 +1,119 @@
+<header class="main">
+	<div id="animation-ballon"></div>
+	<div class="content_wrapper container">
+		<div id="turbine">
+			<div class="left">
+				<div class="poll"></div>
+			</div>
+		</div>
+		<div ng-include="'components/navbar/navbar.html'"></div>
+		<div class="headline">
+			<h1>
+				Your node.js <br>
+				development environment <br>
+				in the cloud
+			</h1>
+
+			<button ng-hide="showHeaderForm" class="subscribe" ng-click="toogleShowHeaderForm();">Be a part of our private beta</button>
+			<a ng-hide="showHeaderForm" href="/product" class="learn_more">Learn more</a>
+
+			<form class="form-horizontal" role="form" ng-submit="betaRegister()" ng-show="showHeaderForm">
+				<div class="row" ng-hide="subscribe.result">
+					<div class="col-sm-12 userName-wrap">
+						<div class="form-group">
+							<input id="betaname_black" name="name" type="text" class="form-control" placeholder="Name" required ng-model="subscribe.form.name">
+						</div>
+					</div>
+				</div>
+				<div class="row" ng-hide="subscribe.result">
+					<div class="col-sm-12 userEmail-wrap">
+						<div class="form-group">
+							<input id="betaemail_black" name="email" type="email" class="form-control" placeholder="Email" required ng-model="subscribe.form.email">
+						</div>
+					</div>
+				</div>
+				<div class="row" ng-hide="subscribe.result">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<button ng-show="subscribe.loader" type="button" class="subscribe loader">Please wait...</button>
+							<button ng-hide="subscribe.loader" type="submit" class="subscribe">Sign Up</button>
+						</div>
+					</div>
+				</div>
+				<div class="row" ng-show="subscribe.result">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<div class="subscription-result">
+								<span ng-bind-html="subscribe.result"></span> <br>
+								<button type="button" class="subscribe" ng-click="subscribe.reset();">Got it</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</header>
+
+<feedback></feedback>
+
+<section class="setup_build_deploy">
+	<div class="content_wrapper container">
+		<div class="row">
+			<div class="steps setup col-md-4 col-sm-4">
+				<div class="text-center">
+					<h2>Setup</h2>
+					<p>Get your workspace up & ready instantly. Spend no time in configuration and setup. </p>
+				</div>
+			</div>
+			<div class="steps build col-md-4 col-sm-4">
+				<div class="text-center">
+					<h2>Build</h2>
+					<p>Whether you are working from our hosted WebIDE (Orion) or from any Desktop IDE, you can now focus on coding!</p>
+				</div>
+			</div>
+			<div class="steps deploy col-md-4 col-sm-4">
+				<div class="text-center">
+					<h2>Deploy</h2>
+					<p>One click to deploy your changes on heroku, amazon, OPENSHIFT <br> and more… </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="featuring">
+	<div class="content_wrapper container">
+		<h2>Featuring Orion</h2>
+		<h3>an extensible & open source web IDE</h3>
+		<p>
+			Orion, an Eclipse open source project. It is a fully web based IDE which is extensible and allows you connect to your dev environment from any browser and OS.
+		</p>
+		<p>
+			In codefresh we host Orion so whether it is a hot fix, after work hours, or any other circumstances, your complete dev environment is always accessible.
+		</p>
+		<button class="learn_more">Learn More</button>
+	</div>
+</section>
+
+<section class="testimonials">
+	<div class="testimonial_wrap content_wrapper container">
+		<div class="nav_left" ng-click="nav('left')"></div>
+		<div class="nav_right" ng-click="nav('right')"></div>
+		<h4>Why developers love codefresh?</h4>
+		<div class="testimonial_content">
+			<div class="testimonial_roller" id="testimonial_roller" ng-style="testimonials_rooler">
+				<div class="testimonial" ng-repeat="testimonial in testimonials">
+					<div class="testimonial_image">
+						<img ng-src="{{testimonial.img}}">
+					</div>
+					<p ng-bind="testimonial.text"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer ng-include="'components/footer/footer.html'" ng-controller="FooterCtrl"></footer>

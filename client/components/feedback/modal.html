@@ -1,0 +1,10 @@
+<div class="close-modal" ng-click="close()">X</div>
+
+<div class="form_wrap">
+	<form ng-submit="send()">
+		<input type="text" name="name" class="form-control" ng-model="feedback.name" placeholder="Name">
+		<input type="email" name="email" class="form-control" required ng-model="feedback.email" placeholder="Email">
+		<textarea class="form-control" ng-model="feedback.comment" placeholder="Comment"></textarea>
+		<button type="submit" ng-disabled="!feedback.validate()">Comment</button>
+	</form>
+</div>
